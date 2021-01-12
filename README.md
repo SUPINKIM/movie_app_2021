@@ -7,5 +7,7 @@ React JS Fundamentals Course (2021 Update!)
 영화 API 활용
 
 ✅ React Library
+
 ✅ HTML/CSS/Javascript
+
 ✅ https://supinkim.github.io/movie_app_2021/

@@ -1,0 +1,37 @@
+.aboutBox {
+  width: 50%;
+  height: 25em;
+  background-color: #f9ffff;
+  box-shadow: 2px 2px 8px #c6cacf;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.aboutBox img {
+  width: 15em;
+  height: 20em;
+}
+
+.myScript {
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 1090px) {
+  .aboutBox {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .aboutBox img {
+    max-width: 12em;
+    max-height: 18em;
+  }
+}

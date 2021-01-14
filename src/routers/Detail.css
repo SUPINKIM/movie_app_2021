@@ -1,0 +1,53 @@
+.movieRoot {
+  width: 100%;
+  height: 100%;
+  background-color: #0e1730;
+}
+.movieDetails {
+  width: 50%;
+  height: 20em;
+  background-color: #f9ffff;
+  box-shadow: 1px 1px 1px #c6cacf;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.movieDetails div img {
+  width: 10em;
+  height: 15em;
+  box-shadow: 2px 2px 8px #c6cacf;
+  position: relative;
+  top: -10%;
+  left: 10%;
+}
+
+.movieDetails section {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin: 0 2.5rem;
+}
+.movieDetails section div {
+  font-weight: 200;
+}
+.movieDetails section div:first-child {
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1090px) {
+  .movieDetails {
+    height: 30em;
+    flex-direction: column;
+  }
+  .movieDetails section {
+    flex-wrap: wrap;
+    overflow: scroll;
+    flex-direction: row;
+  }
+}

@@ -1,11 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import './Movie.css';
 
 function Movie({ id, title, year, rating, summary, poster, genres }) {
-  function handleClick(e) {
-    alert('더 많은 내용을 보시려면 로그인을 해주세요. :)');
-  }
   return (
     <div className='movies_movie'>
       <div className='movieTitle'>{title} </div>
@@ -14,8 +12,23 @@ function Movie({ id, title, year, rating, summary, poster, genres }) {
       <img className='moviePoster' src={poster} alt={title} />
       <div className='summary'>
         <div className='movieSummary'>{summary}</div>
-        <div className='summaryBnt' onClick={handleClick}>
-          ▼
+        <div className='summaryBnt'>
+          <Link
+            to={{
+              pathname: `movie/${id}`,
+              state: {
+                id,
+                title,
+                year,
+                rating,
+                summary,
+                poster,
+                genres,
+              },
+            }}
+          >
+            더 보기
+          </Link>
         </div>
       </div>
       <div className='movieGenres'>

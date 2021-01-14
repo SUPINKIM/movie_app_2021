@@ -37,14 +37,15 @@
 .moviePoster {
   position: relative;
   top: -18%;
-  left: 60%;
+  left: 62%;
   max-width: 135px;
   box-shadow: 2px 2px 4px #c6cacf;
 }
 
 .summary {
+  width: 55%;
   position: relative;
-  top: -65%;
+  top: -68%;
   width: 50%;
   display: flex;
   flex-direction: row;
@@ -52,6 +53,7 @@
   align-items: flex-end;
 }
 .movieSummary {
+  width: 85%;
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -62,14 +64,19 @@
 
 .summaryBnt {
   cursor: pointer;
-  margin-left: 0.6rem;
-  color: #a4a4a4;
-  font-weight: 100;
+}
+
+.summaryBnt > a {
+  text-decoration: none;
+  color: #2a2a2a;
+  font-size: 0.7em;
+  font-weight: 200;
 }
 
 .movieGenres {
+  width: 55%;
   position: relative;
-  top: -56%;
+  top: -60%;
   width: 55%;
   font-weight: 200;
 }

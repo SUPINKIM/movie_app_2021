@@ -1,10 +1,10 @@
 .movieRoot {
   width: 100%;
   height: 100%;
-  background-color: #0e1730;
+  background-color: #e1efff;
 }
 .movieDetails {
-  width: 50%;
+  width: 55%;
   height: 20em;
   background-color: #f9ffff;
   box-shadow: 1px 1px 1px #c6cacf;
